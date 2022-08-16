@@ -1,0 +1,17 @@
+
+
+label , button {
+	transition: all 0.5s ease-in-out !important;
+}
+
+button:hover {
+	color: #FFF !important;
+}
+
+textarea {
+	height: 100px !important;
+}
+
+td {
+	vertical-align: middle !important;
+}

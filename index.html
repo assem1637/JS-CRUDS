@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="Description" content="#" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="CRUD CRUDS CRUDS-JS JS" />
+		<meta name="author" content="Assem Saeed" />
+		<title>Assem Saeed</title>
+		<link rel="stylesheet" type="text/css" href="css/all.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		
+
+		<form class="container mt-5">
+			
+			<div class="form-floating my-4">
+				<input oninput="validationInput(this)" type="text" id="productName" placeholder="Product Name" class="form-control" />
+				<label for="productName">Product Name</label>
+			</div>
+
+			<div class="form-floating my-4">
+				<input type="number" id="productPrice" placeholder="Product Price" class="form-control" />
+				<label for="productPrice">Product Price</label>
+			</div>
+
+			<div class="form-floating my-4">
+				<input oninput="validationInput(this)" type="text" id="productCategory" placeholder="Product Category" class="form-control" />
+				<label for="productCategory">Product Category</label>
+			</div>
+
+			<div class="form-floating my-4">
+				<textarea id="productDescription" placeholder="Product Description" class="form-control"></textarea>
+				<label for="productDescription">Product Description</label>
+			</div>
+
+			<button type="submit" class="btn btn-outline-info" id="addProduct"><i class="fa-solid fa-circle-plus"></i> Add Product</button>
+
+			<div class="btns d-none">
+				<button class="btn btn-outline-primary" id="btnUpdataProduct"><i class="fa-solid fa-pen-to-square"></i> Update Product</button>
+				<button class="btn btn-outline-success" id="btnDone">Done</button>
+			</div>
+
+		</form>
+
+		<div class="form-floating w-75 mx-auto my-5">
+			<input type="text" id="searchProductName" placeholder="Search Product Name" class="form-control" />
+			<label for="searchProductName">Search Product Name</label>
+		</div>
+
+		<table class="container table border text-center">
+			<thead>
+				<tr>
+					<th>Index</th>
+					<th>Product Name</th>
+					<th>Product Price</th>
+					<th>Product Category</th>
+					<th>Product Description</th>
+					<th>Update</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+
+
+		<script type="text/javascript" src="js/all.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
